@@ -89,3 +89,58 @@ footer {
   color: #000;
 }
 
+/* For about.html */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  flex: 1;
+}
+
+/* For work.html */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background: #fefefe;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.project-detail {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f1f1f1;
+  border-radius: 8px;
+  display: none;
+}

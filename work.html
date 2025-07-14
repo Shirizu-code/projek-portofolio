@@ -9,16 +9,44 @@
   <header class="hero">
     <h1>My Projects</h1>
   </header>
-  <section class="content">
-    <ul>
-      <li>✔ Website Bank Sampah</li>
-      <li>✔ Kontrakan Rose Property</li>
-      <li>✔ Skincare Landing Page</li>
-      <li>✔ Tidur Berkualitas Web ML</li>
-    </ul>
-    <p>
-      <a href="index.html">← Back to Home</a>
-    </p>
-  </section>
+    <section class="project-section">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+        <div class="project-card" onclick="showDetail('bank')">
+        <h3>🏦 Bank Sampah</h3>
+        <p>CodeIgniter 4 + MySQL</p>
+        </div>
+        <div class="project-card" onclick="showDetail('kontrakan')">
+        <h3>🏘️ Kontrakan Rose</h3>
+        <p>Web CRUD System</p>
+        </div>
+        <div class="project-card" onclick="showDetail('skincare')">
+        <h3>💅 Skincare Landing Page</h3>
+        <p>Pure HTML + Figma</p>
+        </div>
+        <div class="project-card" onclick="showDetail('sleep')">
+        <h3>🌙 Kualitas Tidur ML</h3>
+        <p>Python + Flask + Random Forest</p>
+        </div>
+    </div>
+
+    <div id="project-detail" class="project-detail"></div>
+    </section>
+
 </body>
+<script>
+  const details = {
+    bank: "A waste bank management system built using CodeIgniter 4 and MySQL. It features withdrawal history, user levels, and secure authentication.",
+    kontrakan: "Property management system to track rental houses and contracts. Simple web CRUD with proper data flow.",
+    skincare: "Static landing page to present skincare products categorized by skin type. Designed with Figma, implemented with responsive layout.",
+    sleep: "Machine learning web app to classify sleep health using Random Forest. Frontend uses Flask API integration and visualization."
+  };
+
+  function showDetail(key) {
+    const detailBox = document.getElementById("project-detail");
+    detailBox.style.display = "block";
+    detailBox.innerHTML = `<strong>${key.toUpperCase()}</strong>: ${details[key]}`;
+  }
+</script>
+
 </html>
