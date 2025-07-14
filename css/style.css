@@ -40,6 +40,12 @@ body, html {
 .bg2 {
   background-image: url('../img/bg2.jpg');
 }
+/* .bg1 {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80');
+}
+.bg2 {
+  background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
+} */
 
 .text-overlay {
   background: rgba(0, 0, 0, 0.5);
@@ -52,7 +58,9 @@ body, html {
 .content {
   padding: 60px 20px;
   text-align: center;
-  background: #f8f9fa;
+  color: white;
+  /* background: #eeeeee; */
+  background-image: url('../img/bg2.jpg');
 }
 
 .content h2 {
