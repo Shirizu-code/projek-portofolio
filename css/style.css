@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: url('../img/profile.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+}
+
+.parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg1 {
+  background-image: url('../img/bg1.jpg');
+}
+
+.bg2 {
+  background-image: url('../img/bg2.jpg');
+}
+
+.text-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background: #222;
+  color: white;
+}
