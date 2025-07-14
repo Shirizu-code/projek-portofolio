@@ -73,3 +73,19 @@ footer {
   background: #222;
   color: white;
 }
+
+.parallax-link {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.parallax-link:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
